@@ -8,7 +8,7 @@ export default function ActorListPage() {
 
   return (
     <div>
-      <h1>List of Unique Actors</h1>
+      <h1>Actors</h1>
       <ul>
         {actors.map(
           (actor, i) => (
