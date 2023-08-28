@@ -1,11 +1,11 @@
 export default function MovieCard({ posterPath, releaseDate, title, cast }) {
   return (
     <div className="movie-card">
-      <img src={posterPath} alt="" />
-      <h3>{title}</h3>
+      <img className="card-img" src={posterPath} alt="" />
+      <h2>{title}</h2>
       <h4>{releaseDate}</h4>
       <label htmlFor="cast">Cast</label>
-      <ul>
+      <ul className="cast-ul">
         {cast.map((c, i) => (
           <li key={i}>{c}</li>
         ))}
